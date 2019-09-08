@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vera's Workshop</title>
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="main.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body class="black">
+	<div id="home" class="row">
+ 		<div class="col-12 center">
+			<h4 style="color:#ffbf00e8;" class="font-white">My Personal Blog</h4>
+			<h1 class="font-white">Vera's Workshop</h1>
+			<h4 style="color:#ffbd39cc;" class="font-white">Web Design - Web Developer - Phtography - Branding</h4>
+		</div>
+		<div class="col-12 padding-32 center">
+			<img class="v" src="gambar/logo.png" alt="Logo v">
+		</div>
+
+	 	<nav class="col-12 padding-16 center">
+		 	<ul>
+		 		<li class="col-1"><a href="home.html">Home</a></li>
+		 		<li class="col-1"><a href="aboutme.html">About Me</a></li>
+		 		<li class="col-1"><a href="contact.html">Contact</a></li>
+		 		<li class="col-1"><a href="skills.html">Skills</a></li>
+		 		<li class="col-1"><a href="education.html">Education</a></li>
+		 		<li class="col-1"><a href="services.html">Services</a></li>
+		 	</ul>
+	 	</nav>
+   </div>
+
+	<div style="height: 60vh;position: relative;">
+		<div class="slider">
+		  <div class="slide">
+			<div  class="black padding-32" >
+				<div class="row" style="width:100%;">
+				 	<div class="col-4 center padding-32">
+				 		 <img class="square" style="width:300px;height:340px;margin: 0 50px;" src="gambar/satu.jpg" alt="satu">
+				 	</div>
+			 		<div class="col-8 padding-16">
+					  	<h3 style="color:#ffbd39;margin: 0px;">Hello!</h3>
+		 		  		<h1>I'm <span style="color:#ffbd39;"> Vera</span></h1>
+		 				<h2>A freelance web designer</h2>
+			 		</div>
+				</div>
+			</div>	  	
+		  </div>
+		  <div class="slide">
+			<div  class="row black padding-32" >
+			 	<div class="col-4 center padding-32" >
+			 		 <img class="square" style="width:300px;height:340px;margin: 0 50px;" src="gambar/dua.jpeg" alt="dua">
+			 	</div>
+
+		 		<div class="col-8 padding-16" >
+				  <h3 style="color:#ffbd39;">Hello!</h3>
+		 		  	<h1 style="font-size:55px;"> I'm a <span style="color:#ffbd39;"> Web <br> designer</span> based <br> in Indonesian</h1>
+		 		</div>
+			</div>
+		  </div>
+		</div>
+		<a class="arrow-left" style="opacity: 0;" href="javascript:void(0);"></a>
+		<a class="arrow-right" style="opacity: 0;" href="javascript:void(0);"></a>
+		<div class="dots-wrapper" style="opacity: 0;"></div>
+	</div>
+	<div id="button" class="row black padding-32" >
+		<div class="row" style="width:100%;">
+	 		<div class="col-12 padding-32">
+ 				<p style="font-size: 28px;text-align: center">
+ 					"You'll always need a brand and you'll always need to<br>
+ 					 showcase your product or service, that's why a website is <br>
+ 					 such a necessity for yout busniess"
+ 				</p>
+ 				<div class="col-12 padding-32 center a">
+ 				<a class="cv" href="gambar/cv.pdf">Download CV</a>
+ 				</div>
+	 		</div>
+		</div>
+	</div>	
+	<script src="slider.js" ></script> 
+	<script>
+		setInterval(() => {
+			$('.arrow-right').click();
+		},3000);
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,559 @@
+* {
+ 	box-sizing: border-box;
+	font-family: 'Russo One', sans-serif;
+}
+
+body,html{
+ 	margin:0px;
+ 	padding:0px;
+ 	height: 100%;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+ 	width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	 /* For tablets: (ukuran layar lebih besar dari 600px) */
+	 .col-m-1 {width: 8.33%;}
+	 .col-m-2 {width: 16.66%;}
+	 .col-m-3 {width: 25%;}
+	 .col-m-4 {width: 33.33%;}
+	 .col-m-5 {width: 41.66%;}
+	 .col-m-6 {width: 50%;}
+	 .col-m-7 {width: 58.33%;}
+	 .col-m-8 {width: 66.66%;}
+	 .col-m-9 {width: 75%;}
+	 .col-m-10 {width: 83.33%;}
+	 .col-m-11 {width: 91.66%;}
+	 .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+ /* For desktop: (ukuran layar lebih besar dari 768px)*/
+ .col-1 {width: 8.33%;}
+ .col-2 {width: 16.66%;}
+ .col-3 {width: 25%;}
+ .col-4 {width: 33.33%;}
+ .col-5 {width: 41.66%;}
+ .col-6 {width: 50%;}
+ .col-7 {width: 58.33%;}
+ .col-8 {width: 66.66%;}
+ .col-9 {width: 75%;}
+ .col-10 {width: 83.33%;}
+ .col-11 {width: 91.66%;}
+ .col-12 {width: 100%;}
+}
+
+.row:after {
+	 content: '';
+	 clear: both;
+	 display: block;
+	 margin:0px;
+}
+
+.row div{
+	 float:left;
+}
+
+.padding-8{
+  padding: 8px;
+}
+
+.padding-16 {
+  padding: 16px;
+}
+
+.padding-32 {
+  padding: 32px;
+}
+
+.padding-64 {
+  padding: 64px;
+}
+
+.padding-128 {
+  padding: 128px;
+}
+
+h1{
+  font-size: 64px;
+}
+
+h4{
+  font-size: 18px;
+}
+
+.center{
+  text-align: center;
+}
+table {
+ border: 1px solid #ccc;
+ width: 100%;
+ margin:0;
+ padding:0;
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+table tr {
+ border: 1px solid #ddd;
+ padding: 5px;
+}
+table th, table td {
+ padding: 10px;
+ text-align: center;
+}
+table th {
+ text-transform: uppercase;
+ font-size: 14px;
+ letter-spacing: 1px;
+}
+@media screen and (max-width: 600px) {
+ table {
+ border: 0;
+ }
+ table thead {
+ display: none;
+ }
+ table tr {
+ margin-bottom: 10px;
+ display: block;
+ border-bottom: 2px solid #ddd;
+ }
+ table td {
+ display: block;
+ text-align: right;
+ font-size: 13px;
+ border-bottom: 1px dotted #ccc;
+ }
+ table td:last-child {
+ border-bottom: 0;
+ }
+ table td:before {
+ content: attr(data-label);
+ float: left;
+ text-transform: uppercase;
+ font-weight: bold;
+ }
+}
+
+
+a{
+	text-decoration: none;
+	color:white;
+}
+
+nav li{
+	display:inline-block;
+}
+
+nav li a{
+	text-decoration: none;
+	color:#eee;
+	padding:10px;
+	border-radius: 15px;
+}
+
+nav li a:hover{
+	background-color: navy;
+}
+.circle{
+	border-radius: 200px;
+}
+.img img:hover{
+	transform: scale(1.1);
+}
+
+.black{
+	background-color: #000000e8;
+	color:white;
+
+}
+.white{
+	background-color: white;
+	color:black;
+}
+
+
+.grey{
+	background-color: grey;
+}
+
+.blue{
+	background-color: #2a3b94;
+	color:#070927;
+}
+
+.contact{
+	background:grey;
+	color:white;
+	text-align: center;
+	padding:15px 10px;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.contact .wrapper h2{
+	text-shadow: 0px 4px 0px black;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	border-bottom: 7px solid white;
+	display:inline-block;
+	padding-bottom: 7px;
+	margin-bottom: 40px;
+}
+
+.contact .wrapper-contact input,
+.contact .wrapper-contact textarea{
+	width:100%;
+	height:30px;
+	border:none;
+	border-radius: 11px;
+	padding:10px 15px;
+	margin-bottom: 18px;
+	font-family: russo one;
+}
+
+.contact .wrapper-contact textarea{
+	height:120px;
+}
+
+.contact .wrapper-contact input[type="submit"]{
+	color:black;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 15px;
+	padding:10px 60px;
+	border:5px solid black;
+	border-top:none;
+	border-left:none;
+	border-right: none;
+	background-color: #feda5f;
+	display:inline-block;
+	width:auto;
+	cursor:pointer;
+	transition:background  0.5s ease-out;
+}
+
+.contact .wrapper-contact input[type="submit"]:hover{
+	background: #f4cf53;
+	box-shadow:0 5px 25px -5px rgba(0, 0, 0, .7);
+}
+
+.barskill{
+	width:50%;
+	position:absolute;
+	top:20%;
+	transform:translate(50%,50%);
+	padding: 20px;
+	background: #333;
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+	margin:0px;
+}
+
+.skillBox {
+	box-sizing: border-box;
+	width: 100%;
+	margin:20px 0;
+}
+
+.skillBox p{
+	color:#fff;
+	text-transform: uppercase;
+	margin-bottom:10px ;
+	padding:0;
+	letter-spacing: 1px;
+}
+
+.skillBox p:nth-child(2){
+	float:right;
+	position: relative;
+	top: -50px;
+}
+
+.skill{
+	background: #262626;
+	padding: 4px;
+	box-sizing: border-box;
+	border:1px solid #0fffb7;
+	border-radius: 2px;
+}
+
+.skill_level{
+	background: #0fffb7;
+	width:100%;
+	height: 10px;
+}
+
+#button .row a{
+	color:orange;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 15px;
+	padding: 10px 30px;
+	margin-bottom: 40px;
+	border: 3px solid orange;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+}
+
+.bulet{
+	width:100px;
+	height:100px;
+	border-radius: 100px;
+	border: 4px solid white;
+	margin: 5px 60px 10px 30px;
+}
+
+.form input, .form textarea{
+	margin-top: 15px;
+}
+
+.cv{
+	right:0;
+	left:0;
+	margin:auto;
+	position:absolute;
+	width:20%;
+	text-align: center;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 50px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #61D4E8;
+  border: 4px solid #2DA1E7;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: black;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.v{
+	width:60px;
+	height:60px;
+	animation:rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotatey(360deg);
+  }
+}
+
+.a a:hover{
+	transform: scale(1.1);
+}
+
+
+.dots-wrapper {
+   position: absolute;
+   width: 100px;
+   left: 50%;
+   margin-left: -50px;
+   bottom: 20px;
+   text-align: center;
+}
+ .dots-wrapper li {
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   background-color: white;
+   border-radius: 50%;
+   margin: 0 4px;
+   opacity: 0.5;
+   cursor: pointer;
+   transition: opacity 0.3s;
+}
+ .dots-wrapper li.active, .dots-wrapper li:hover {
+   opacity: 1;
+}
+ .slider {
+   position: relative;
+   width: 100%;
+   margin: 0 auto;
+   cursor: pointer;
+   overflow: hidden;
+}
+ .slider .slider-inner {
+   position: absolute;
+}
+ .slider .slider-inner:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+ .slider .slider-inner .slide {
+   float: left;
+   box-sizing: border-box;
+   background-size: 100% auto;
+   background-attachment: fixed;
+   background-position: center center;
+}
+
+ .slider .slider-inner .slide img {
+   display: block;
+   /*width: 100%;*/
+}
+
+ .slider .slider-inner .slide {
+   cursor: default;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   display: block;
+   width: 100vw;
+   height: 100vh;
+   top: 12vw;
+}
+ a[class|="arrow"] {
+   position: absolute;
+   display: block;
+   top: 50%;
+   margin-top: -20px;
+   width: 40px;
+   height: 40px;
+}
+ .arrow-left {
+   left: 20px;
+   border-bottom: 6px solid #fff;
+   border-left: 6px solid #fff;
+   transform: rotate(45deg);
+   transition: left 0.5s;
+}
+ .arrow-left:hover {
+   left: 15px;
+}
+ .arrow-right {
+   right: 20px;
+   border-bottom: 6px solid #fff;
+   border-right: 6px solid #fff;
+   transform: rotate(-45deg);
+   transition: right 0.5s;
+}
+ .arrow-right:hover {
+   right: 15px;
+}
